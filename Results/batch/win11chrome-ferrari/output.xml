@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-17T22:03:22.220168" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon" source="C:\development\robot-scripts\amazon\Tests\amazon.robot">
+<kw name="Insert Testing Data" owner="Common" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-17T22:03:22.396932" level="INFO">I am setting up the test data...</msg>
+<arg>I am setting up the test data...</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-17T22:03:22.396729" elapsed="0.000248"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:22.396262" elapsed="0.000788"/>
+</kw>
+<test id="s1-t1" name="Logged out user can search for products" line="24">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:22.398119" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:22.397950" elapsed="3.153276"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:22.397709" elapsed="3.153748"/>
+</kw>
+<kw name="Search For Products" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:25.554053" level="INFO">Opening url 'https://www.amazon.co.uk/'</msg>
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:25.553820" elapsed="1.158559"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:25.553424" elapsed="1.159133"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:nav-logo-sprites</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:26.713229" elapsed="1.386383"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:26.712820" elapsed="1.387007"/>
+</kw>
+<kw name="Accept Cookies" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Select your cookie preferences</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:28.100580" elapsed="0.083726"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:28.186483" level="INFO">Clicking button 'id:sp-cc-accept'.</msg>
+<arg>id:sp-cc-accept</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:28.185068" elapsed="0.326045"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:28.100165" elapsed="0.411175"/>
+</kw>
+<kw name="Search For Products" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:28.512547" level="INFO">Typing text 'LEGO Speed Champions Ferrari SF-24' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>id:twotabsearchtextbox</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:28.512152" elapsed="0.302194"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:28.814876" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<arg>id:nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:28.814632" elapsed="3.130549"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:28.511671" elapsed="3.433756"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:31.946491" elapsed="0.029522"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:31.945890" elapsed="0.030284"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:25.552837" elapsed="6.423431"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T22:03:31.977317" elapsed="3.506501"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:31.976929" elapsed="3.506992"/>
+</kw>
+<doc>Check a logged out user can search for products on Amazon UK</doc>
+<tag>F1</tag>
+<status status="PASS" start="2026-03-17T22:03:22.397102" elapsed="13.087279"/>
+</test>
+<test id="s1-t2" name="Logged out user can search for products and select an item" line="29">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:35.486468" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:35.486330" elapsed="2.840856"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:35.486125" elapsed="2.841206"/>
+</kw>
+<kw name="Search For Products" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:38.329114" level="INFO">Opening url 'https://www.amazon.co.uk/'</msg>
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:38.328917" elapsed="0.901671"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:38.328389" elapsed="0.902348"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:nav-logo-sprites</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:39.231249" elapsed="1.132820"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:39.230952" elapsed="1.133795"/>
+</kw>
+<kw name="Accept Cookies" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Select your cookie preferences</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:40.366849" elapsed="0.356792"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:40.724168" level="INFO">Clicking button 'id:sp-cc-accept'.</msg>
+<arg>id:sp-cc-accept</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:40.723894" elapsed="0.150483"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:40.365671" elapsed="0.508851"/>
+</kw>
+<kw name="Search For Products" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:40.875505" level="INFO">Typing text 'LEGO Speed Champions Ferrari SF-24' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>id:twotabsearchtextbox</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:40.875237" elapsed="0.225042"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:41.100850" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<arg>id:nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:41.100563" elapsed="2.629864"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:40.874760" elapsed="2.855862"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:43.731223" elapsed="0.027021"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:43.730893" elapsed="0.027519"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:38.327988" elapsed="5.430705"/>
+</kw>
+<kw name="Select Product From Search Results" owner="AmazonApp">
+<kw name="Clink Product Image" owner="SearchResults">
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:43.760144" level="INFO">Clicking image 'xpath://img[contains(@alt, 'LEGO Speed Champions Ferrari SF-24')]'.</msg>
+<arg>xpath://img[contains(@alt, '${SEARCH_TERM}')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:43.759919" elapsed="3.058790"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:43.759678" elapsed="3.059411"/>
+</kw>
+<kw name="Verify Product Loaded" owner="Product">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:46.872674" level="INFO">Current page contains text 'LEGO Speed Champions Ferrari SF-24'.</msg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-17T22:03:46.820346" elapsed="0.052454"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:46.819680" elapsed="0.053251"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:43.759264" elapsed="3.113744"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T22:03:46.873959" elapsed="2.885653"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:46.873537" elapsed="2.886194"/>
+</kw>
+<doc>Check a logged out user can search for products and select an item
+on Amazon UK</doc>
+<tag>F1</tag>
+<status status="PASS" start="2026-03-17T22:03:35.485490" elapsed="14.274664"/>
+</test>
+<test id="s1-t3" name="Logged out user can search for products, select an item, and add it to their cart" line="36">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:49.762375" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:49.762239" elapsed="2.812404"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:49.762037" elapsed="2.812813"/>
+</kw>
+<kw name="Search For Products" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:52.576985" level="INFO">Opening url 'https://www.amazon.co.uk/'</msg>
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:03:52.576736" elapsed="0.948012"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:52.576279" elapsed="0.948616"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:nav-logo-sprites</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:53.525384" elapsed="1.075636"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:53.525087" elapsed="1.076074"/>
+</kw>
+<kw name="Accept Cookies" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Select your cookie preferences</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:54.602114" elapsed="0.254585"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:54.857209" level="INFO">Clicking button 'id:sp-cc-accept'.</msg>
+<arg>id:sp-cc-accept</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:54.856946" elapsed="0.229588"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:54.601450" elapsed="0.485240"/>
+</kw>
+<kw name="Search For Products" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:55.087551" level="INFO">Typing text 'LEGO Speed Champions Ferrari SF-24' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>id:twotabsearchtextbox</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:55.087285" elapsed="0.247513"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:55.336287" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<arg>id:nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:55.335650" elapsed="2.771567"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:55.086935" elapsed="3.020841"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:03:58.109389" elapsed="0.030148"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:58.108520" elapsed="0.031311"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:52.575667" elapsed="5.564273"/>
+</kw>
+<kw name="Select Product From Search Results" owner="AmazonApp">
+<kw name="Clink Product Image" owner="SearchResults">
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:03:58.141399" level="INFO">Clicking image 'xpath://img[contains(@alt, 'LEGO Speed Champions Ferrari SF-24')]'.</msg>
+<arg>xpath://img[contains(@alt, '${SEARCH_TERM}')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:03:58.141124" elapsed="2.899844"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:58.140942" elapsed="2.900459"/>
+</kw>
+<kw name="Verify Product Loaded" owner="Product">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:01.094835" level="INFO">Current page contains text 'LEGO Speed Champions Ferrari SF-24'.</msg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-17T22:04:01.042226" elapsed="0.052778"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:01.041750" elapsed="0.053409"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:03:58.140457" elapsed="2.954800"/>
+</kw>
+<kw name="Add Product To Cart" owner="AmazonApp">
+<kw name="Add to Cart" owner="Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:01.096719" level="INFO">Clicking button 'id:add-to-cart-button'.</msg>
+<arg>id:add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:01.096459" elapsed="1.389877"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:01.096173" elapsed="1.390345"/>
+</kw>
+<kw name="Verify Product Added" owner="Product">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Added to basket</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:02.487013" elapsed="0.026103"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:02.486726" elapsed="0.026682"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:01.095763" elapsed="1.417771"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T22:04:02.515295" elapsed="2.895954"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:02.514935" elapsed="2.896410"/>
+</kw>
+<doc>Check a logged out user can search for products, select an item,
+and add it to their cart on Amazon UK</doc>
+<tag>F1</tag>
+<status status="PASS" start="2026-03-17T22:03:49.761454" elapsed="15.650114"/>
+</test>
+<test id="s1-t4" name="Logged out user can search for products, select an item and add it to their cart, but has to log in to purchase" line="44">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:05.413548" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:04:05.413407" elapsed="2.658869"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:05.413195" elapsed="2.659286"/>
+</kw>
+<kw name="Search For Products" owner="AmazonApp">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:08.074348" level="INFO">Opening url 'https://www.amazon.co.uk/'</msg>
+<arg>${START_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-17T22:04:08.074145" elapsed="0.789925"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:08.073814" elapsed="0.790467"/>
+</kw>
+<kw name="Verify Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:nav-logo-sprites</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:08.864891" elapsed="1.170113"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:08.864576" elapsed="1.170605"/>
+</kw>
+<kw name="Accept Cookies" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Select your cookie preferences</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:10.035974" elapsed="0.283183"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:10.319762" level="INFO">Clicking button 'id:sp-cc-accept'.</msg>
+<arg>id:sp-cc-accept</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:10.319454" elapsed="0.178609"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:10.035471" elapsed="0.462743"/>
+</kw>
+<kw name="Search For Products" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:10.499107" level="INFO">Typing text 'LEGO Speed Champions Ferrari SF-24' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>id:twotabsearchtextbox</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:10.498788" elapsed="0.194002"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:10.693519" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<arg>id:nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:10.693237" elapsed="2.745161"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:10.498450" elapsed="2.940125"/>
+</kw>
+<kw name="Verify Search Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:13.439187" elapsed="0.045281"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:13.438852" elapsed="0.045730"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:08.073206" elapsed="5.411421"/>
+</kw>
+<kw name="Select Product From Search Results" owner="AmazonApp">
+<kw name="Clink Product Image" owner="SearchResults">
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:13.486070" level="INFO">Clicking image 'xpath://img[contains(@alt, 'LEGO Speed Champions Ferrari SF-24')]'.</msg>
+<arg>xpath://img[contains(@alt, '${SEARCH_TERM}')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:13.485849" elapsed="2.881678"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:13.485546" elapsed="2.882186"/>
+</kw>
+<kw name="Verify Product Loaded" owner="Product">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:16.452288" level="INFO">Current page contains text 'LEGO Speed Champions Ferrari SF-24'.</msg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-17T22:04:16.368445" elapsed="0.083980"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:16.368034" elapsed="0.084531"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:13.485173" elapsed="2.967480"/>
+</kw>
+<kw name="Add Product To Cart" owner="AmazonApp">
+<kw name="Add to Cart" owner="Product">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:16.454117" level="INFO">Clicking button 'id:add-to-cart-button'.</msg>
+<arg>id:add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:16.453893" elapsed="1.449435"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:16.453579" elapsed="1.449900"/>
+</kw>
+<kw name="Verify Product Added" owner="Product">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Added to basket</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:17.904016" elapsed="0.032903"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:17.903696" elapsed="0.033332"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:16.453215" elapsed="1.483850"/>
+</kw>
+<kw name="Begin Checkout" owner="AmazonApp">
+<kw name="Proceed To Checkout" owner="Cart">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T22:04:17.938567" level="INFO">Clicking button 'name:proceedToRetailCheckout'.</msg>
+<arg>name:proceedToRetailCheckout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T22:04:17.938366" elapsed="0.724026"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:17.938065" elapsed="0.724490"/>
+</kw>
+<kw name="Verify Page Loaded" owner="SignIn">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>name:email</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-17T22:04:18.663130" elapsed="0.010065"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:18.662786" elapsed="0.010530"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:17.937550" elapsed="0.735806"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-17T22:04:23.674793" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-17T22:04:18.673713" elapsed="5.001302"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T22:04:23.676424" elapsed="2.900243"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:23.676002" elapsed="2.900756"/>
+</kw>
+<doc>Check a logged out user can search for products, select an item,
+and add it to their cart on Amazon UK, but they have to log in
+to purchase</doc>
+<tag>F1</tag>
+<status status="PASS" start="2026-03-17T22:04:05.412657" elapsed="21.164403"/>
+</test>
+<kw name="Cleanup Testing Data" owner="Common" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-17T22:04:26.578364" level="INFO">I am cleaning up the test data...</msg>
+<arg>I am cleaning up the test data...</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-17T22:04:26.578194" elapsed="0.000201"/>
+</kw>
+<status status="PASS" start="2026-03-17T22:04:26.578051" elapsed="0.000383"/>
+</kw>
+<doc>This is some basic info about the whole suite.</doc>
+<status status="PASS" start="2026-03-17T22:03:22.221980" elapsed="64.356474"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">F1</stat>
+</tag>
+<suite>
+<stat name="Amazon" id="s1" pass="4" fail="0" skip="0">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

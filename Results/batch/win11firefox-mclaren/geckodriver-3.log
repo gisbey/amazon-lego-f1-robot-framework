@@ -1,0 +1,57 @@
+1773785430367	geckodriver	INFO	Listening on 127.0.0.1:57844
+1773785433459	mozrunner::runner	INFO	Running command: "C:\\Users\\RGisbey\\.cache\\selenium\\firefox\\win64\\148.0.2\\firefox.exe" "--marionette" "--remote-debugg ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileht5CEr"
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1773785434241	Marionette	INFO	Marionette enabled
+1773785434467	Marionette	INFO	Listening on port 57855
+WebDriver BiDi listening on ws://127.0.0.1:57845
+Read port: 57855
+1773785434608	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.error: "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileht5CEr" "" 0 ".purge.bg_rm" ""
+console.warn: "Skipping Glean as no metrics id is passed"
+JavaScript warning: https://1c5c1ecf7303.1a6c481c.eu-west-2.token.awswaf.com/1c5c1ecf7303/2d9e2c31d174/d26d5ce40abb/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://1c5c1ecf7303.1a6c481c.eu-west-2.token.awswaf.com/1c5c1ecf7303/2d9e2c31d174/d26d5ce40abb/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.co.uk/, line 3710: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.co.uk/s?k=LEGO+Speed+Champions+McLaren+F1+Team+MCL38&crid=30110J1R3SYB6&sprefix=lego+speed+champions+mc%2Caps%2C305&ref=nb_sb_noss_2, line 7177: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.co.uk/LEGO-Champions-McLaren-Collectible-Minifigure/dp/B0DHS9Y192/ref=sr_1_6?crid=30110J1R3SYB6&dib=eyJ2IjoiMSJ9.DVGHrkXC-Xcc29ndEJ7LEg9-CSW5PgCmJYlKD29vA144B33Eg-mdb-PW1u24ggPwO93Wyx9ZnctDMmZBjYvaSG7uUiTHTEE9MSOb5mnlPIPv6QJiD84TrypCKV5Z2DnJplNJ8Lw8AvtliJfveGHvjb-wd5IMVLMa1uvRSfChXk4N1dHfIrdnDzdUK8WsE5yZBIwD9QgNvCOPTK5S68RftWTUv9SKXLMLza8p42mPAHM3ldwNC5acCWWopgx_01GJc4OpKMU1Y53J6SvUtRTVCmn8pgOrMs_VgDSvTkULaGs.5IhtmbuyVYqblAFodODxeUt-OsNQP4LajdetA8qwebU&dib_tag=se&keywords=LEGO+Speed+Champions+McLaren+F1+Team+MCL38&qid=1773785439&sprefix=lego+speed+champions+mc%2Caps%2C305&sr=8-6, line 11032: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI, line 249: Script terminated by timeout at:
+e@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:249:495
+u@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:250:457
+@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:254:127
+
+console.error: [Exception... "Component is not available"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "<unknown>"  data: no]
+JavaScript warning: https://www.amazon.co.uk/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 3961: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1773785445403	Marionette	INFO	Stopped listening on port 57855
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.amazon.co.uk/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 283: Script terminated by timeout at:
+S/<@https://www.amazon.co.uk/cart/add-to-cart/ref=dp_start-bbf_1_glance:283:670
+
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.error: "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileht5CEr" "cache2.2026-03-17-22-10-47.purge.bg_rm" 10 ".purge.bg_rm" ""
+console.error: "started removing C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileht5CEr\\cache2.2026-03-17-22-10-47.purge.bg_rm"
+console.error: "done removing C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileht5CEr\\cache2.2026-03-17-22-10-47.purge.bg_rm. removed 775 entries."
+console.warn: "Skipping Glean as no metrics id is passed"

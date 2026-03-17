@@ -1,0 +1,62 @@
+1773785450816	geckodriver	INFO	Listening on 127.0.0.1:57929
+1773785453908	mozrunner::runner	INFO	Running command: "C:\\Users\\RGisbey\\.cache\\selenium\\firefox\\win64\\148.0.2\\firefox.exe" "--marionette" "--remote-debugg ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileU3F6bB"
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1773785454826	Marionette	INFO	Marionette enabled
+1773785454980	Marionette	INFO	Listening on port 57939
+WebDriver BiDi listening on ws://127.0.0.1:57930
+Read port: 57939
+1773785455127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.error: "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileU3F6bB" "" 0 ".purge.bg_rm" ""
+console.warn: "Skipping Glean as no metrics id is passed"
+JavaScript warning: https://1c5c1ecf7303.1a6c481c.eu-west-2.token.awswaf.com/1c5c1ecf7303/2d9e2c31d174/d26d5ce40abb/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://1c5c1ecf7303.1a6c481c.eu-west-2.token.awswaf.com/1c5c1ecf7303/2d9e2c31d174/d26d5ce40abb/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.co.uk/, line 3722: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.co.uk/s?k=LEGO+Speed+Champions+McLaren+F1+Team+MCL38&ref=nb_sb_noss, line 7752: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/B1-bGjBbJxL.js, line 11: Script terminated by timeout at:
+getHoverTime@https://m.media-amazon.com/images/I/B1-bGjBbJxL.js:11:70553
+createInteractionEvent@https://m.media-amazon.com/images/I/B1-bGjBbJxL.js:11:68735
+sendBeaconEvents@https://m.media-amazon.com/images/I/B1-bGjBbJxL.js:11:80976
+prepareSendEvents/<@https://m.media-amazon.com/images/I/B1-bGjBbJxL.js:11:76305
+
+JavaScript warning: https://www.amazon.co.uk/LEGO-Champions-McLaren-Collectible-Minifigure/dp/B0DHS9Y192/ref=sr_1_6?dib=eyJ2IjoiMSJ9.DVGHrkXC-Xcc29ndEJ7LEg9-CSW5PgCmJYlKD29vA144B33Eg-mdb-PW1u24ggPwO93Wyx9ZnctDMmZBjYvaSG7uUiTHTEE9MSOb5mnlPIPv6QJiD84TrypCKV5Z2DnJplNJ8Lw8AvtliJfveGHvjb-wd5IMVLMa1uvRSfChXk4N1dHfIrdnDzdUK8WsE5yZHONlSH8mw2UEBuk_2WSni1kx_UQ1o13LOSvGdVbwOX03ldwNC5acCWWopgx_01GJc4OpKMU1Y53J6SvUtRTVCmn8pgOrMs_VgDSvTkULaGs.OBC67X8T5_9jzo5ecbgtMOgpjmpqvJhkVMFWzWq2kyI&dib_tag=se&keywords=LEGO+Speed+Champions+McLaren+F1+Team+MCL38&qid=1773785460&sr=8-6, line 11042: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI, line 249: Script terminated by timeout at:
+e@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:249:495
+u@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:250:457
+@https://m.media-amazon.com/images/I/11zuylp74DL._RC|61xJcNKKLXL.js,11Y+5x+kkTL.js,51LPrROZ2JL.js,11yKORv-GTL.js,11GgN1+C7hL.js,01+z+uIeJ-L.js,01VRMV3FBdL.js,21NadQlXUWL.js,01vRf9id2EL.js,11a7qqY8xXL.js,11Kqv22sALL.js,51C4kaFbiAL.js,11FhdH2HZwL.js,11wb9K3sw0L.js,11BrgrMAHUL.js,11GPhx42StL.js,210X-JWUe-L.js,01Svfxfy8OL.js,61uZ+hPSDZL.js,01ikBbTAneL.js,316JwWyajNL.js,01qXJuwGmxL.js,01WlsjNmqIL.js,11F929pmpYL.js,31vxRYDelFL.js,01rpauTep4L.js,31rqCOnXDNL.js,011FfPwYqHL.js,21vGxgxnRsL.js,013ncka0wXL.js,21kN0q4IA-L.js,01VvIkYCafL.js,11vb6P5C5AL.js,01VMML3XPCL.js_.js?AUIClients/AmazonUI:254:127
+
+JavaScript warning: https://www.amazon.co.uk/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 3965: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: [Exception... "Component is not available"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "<unknown>"  data: no]
+JavaScript warning: https://www.amazon.co.uk/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.co.uk%2Fcheckout%2Fentry%2Fcart%3FisEligibilityLogicDisabled%3D1%26referrer%3Dcart%26proceedToRetailCheckout%3DProceed%2Bto%2Bcheckout%26ref_%3Dox_sw_proceed%26proceedToCheckout%3D1%26tangoWeblabStatus%3Dtango_enable_unrec_customer%26oldCustomerId%3D0%26pipelineType%3DChewbacca%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_uk&openid.mode=checkid_setup&language=en_GB&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0, line 2556: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/81TrJ8NyNEL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1773785472157	Marionette	INFO	Stopped listening on port 57939
+Dynamically enable window occlusion 1
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: WindowsGPOParser: 
+  Unable to parse JSON for ExtensionSettings
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "https://verintcloudservices.com/edi" - origin was expected but received full URL.
+console.error: JsonSchemaValidator: 
+  Ignoring parameter "[*.]csod.com" - not a valid origin.
+console.error: "C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileU3F6bB" "cache2.2026-03-17-22-11-13.purge.bg_rm" 10 ".purge.bg_rm" ""
+console.error: "started removing C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileU3F6bB\\cache2.2026-03-17-22-11-13.purge.bg_rm"
+console.error: "done removing C:\\Users\\RGisbey\\AppData\\Local\\Temp\\rust_mozprofileU3F6bB\\cache2.2026-03-17-22-11-13.purge.bg_rm. removed 203 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
