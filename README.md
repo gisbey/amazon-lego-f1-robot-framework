@@ -74,13 +74,16 @@ There are 3 variables that can be set:
 - ${BROWSER} = Your choice of browser
 - ${START_URL} = This **must** be set to https://www.amazon.co.uk/
 - ${SEARCH_TERM} = This is the LEGO F1 car of your choice. E.g. LEGO Speed Champions Oracle Red Bull Racing RB20
-Environment settings are stored in configs/*.yaml.
 
 ---
 
 ## Running Tests
-Run all tests and have logs appear in Results directory:
+Run all tests in PyCharm and have logs appear in the 'Results' directory:
 - robot -d results Tests/amazon.robot
+
+Alternatively, you can also run the tests using Powershell by running the following commands in your project directory:
+- robot -d results  -v BROWSER:{{browser_of_your_choice -v SEARCH_TERM:"LEGO_car_of_your_choice" Tests/amazon.robot
+- E.g. robot -d results/batch/win11chrome -v BROWSER:chrome -v SEARCH_TERM:"LEGO Speed Champions Ferrari SF-24" Tests/amazon.robot
 
 ---
 
@@ -92,4 +95,4 @@ Run all tests and have logs appear in Results directory:
 
 These are stored in the **Result** directory.
 
-There are also three batch files stored in Results > batch, each with their own logs. These can be run agains the command line using File Explorer.
+There are also three batch files stored in 'Results > batch', each with their own logs. These can be run agains the command line using File Explorer.
