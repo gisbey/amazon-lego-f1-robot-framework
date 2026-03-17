@@ -1,5 +1,8 @@
 *** Settings ***
-Documentation                                       This is some basic info about the whole suite.
+Documentation                                       This suite allows an unauthenticated user to navigate to Amazon UK,
+...                                                 search for a LEGO F1 car of their choice, select it, and add it to
+...                                                 their basket. Crucially, they cannot actually order the car
+...                                                 without logging into an Amazon account
 
 Resource                                            ../Resources/AmazonApp.robot
 Resource                                            ../Resources/Common.robot

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation                       Flooble
+Documentation                       This file contains keywords for Amazon UK products
 Library                             SeleniumLibrary
 
 *** Keywords ***

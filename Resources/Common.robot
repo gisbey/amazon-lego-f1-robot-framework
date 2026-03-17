@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation                   This is some basic info about this page.
+Documentation                   This file holds startup and teardown keywords that are common across applications
 Library                         SeleniumLibrary
 
 *** Keywords ***

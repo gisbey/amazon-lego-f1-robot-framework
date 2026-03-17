@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation                               This is some basic info about this page.
+Documentation                               This file contains keywords for various actions on Amazon UK
 Resource                                    ../Resources/PO/Cart.robot
 Resource                                    ../Resources/PO/LandingPage.robot
 Resource                                    ../Resources/PO/Product.robot

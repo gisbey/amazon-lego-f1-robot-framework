@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation           This is some basic info about this page.
+Documentation           This file contains keywords for the Amazon UK top nav
 Library                 SeleniumLibrary
 
 *** Keywords ***
