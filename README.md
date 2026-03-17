@@ -1,5 +1,5 @@
-# Amazon LEGO Formula 1 - Robot Framework Automation Suite
-A simple automation suite for users to interact with LEGO F1 cars on Amazon UK. This repository contains automated tests, custom libraries, and supporting utilities designed to enable reliable,
+# Amazon LEGO F1 - Robot Framework Automation Suite
+A simple automation suite for users to interact with LEGO Formula 1 cars on Amazon UK. This repository contains automated tests, custom libraries, and supporting utilities designed to enable reliable,
 readable, and reusable test automation.
 
 ---
