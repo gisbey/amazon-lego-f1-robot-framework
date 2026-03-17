@@ -39,13 +39,13 @@ Crucially, they cannot actually order the car without logging into an Amazon acc
       - SearchResults.robot
       - SignIn.robot
       - TopNav.robot
-    - AmazonAPP.robot - Amazon‑specific keywords
+    - AmazonApp.robot - Amazon‑specific keywords
     - Common.robot - keywords common across applications
   - **Results** - generated logs, outputs, reports, screenshots
-    - batch/
-      - win11chrome-ferrari/
-      - win11edge-mercedes/
-      - win11firefox-mclaren/
+    - **batch** - batch files that can be run against command line
+      - win11chrome-ferrari
+      - win11edge-mercedes
+      - win11firefox-mclaren
   - **Tests**
     - Amazon.robot - Main test file with variables for browser and search term
 
