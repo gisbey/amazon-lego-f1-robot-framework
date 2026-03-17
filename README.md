@@ -57,8 +57,8 @@ Prerequisites:
 - Python
 - PIP
 - Robot Framework
-- Selenium
-- Chrome, Firefox & Edge
+- Selenium Library
+- Chrome, Firefox & Edge browsers
 - Chrome, Firefox & Edge Webdrivers
 - PyCharm IDE (or an IDE of your choice)
 
