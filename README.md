@@ -29,28 +29,24 @@ Crucially, they cannot actually order the car without logging into an Amazon acc
 ---
 
 ## Project Structure
-project/
-│
-├── Resources/                           # Files containing reusable keywords
-│   ├── PO/                              # PO subfolder contains page-specific keywords
-│   ├────── Basket.robot/
-│   ├────── LandingPage.robot/
-│   ├────── Product.robot/
-│   ├────── SearchResults.robot/
-│   ├────── SignIn.robot/
-│   ├────── TopNav.robot/
-│
-│   ├── AmazonAPP.robot/                 # Amazon-specific keywords
-│   ├── Common.robot/                    # Keywords that are common across applications
-│
-├── Results/                             # Generated logs, reports, screenshots
-│   ├── batch/                           # Batch files that can be run against command line
-│   ├────── win11chrome-ferrari/
-│   ├────── win11edge-mercedes/
-│   ├────── win11firefox-mclaren/
-│
-├── Tests/               
-│   ├── Amazon.robot                     # Main test file with variables for browser and Amazon search term.
+-Project
+--Resources                       # Resources directory contains project keywords
+---PO                             # PO subdirectory contains page-specific keywords
+----Basket.robot/
+----LandingPage.robot/
+----Product.robot/
+----SearchResults.robot/
+----SignIn.robot/
+----TopNav.robot/
+---AmazonAPP.robot/                # Amazon-specific keywords
+---Common.robot/                   # Keywords that are common across applications
+--Results                          # Results directory contains generated logs, outputs, reports, and screenshots
+---batch/                          # Batch files that can be run against command line
+----win11chrome-ferrari/
+----win11edge-mercedes/
+----win11firefox-mclaren/
+--Tests
+---Amazon.robot/                   # Main test file with variables for browser and Amazon search term.
 
 ---
 
