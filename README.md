@@ -24,6 +24,7 @@ This suite allows an unauthenticated user to:
 - Select it
 - Add it to their basket
 - Head to checkout
+
 Crucially, they cannot actually order the car without logging into an Amazon account.
 
 ---
