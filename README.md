@@ -80,7 +80,7 @@ There are 3 variables that can be set:
 Run all tests in PyCharm and have logs appear in the 'Results' directory:
 - robot -d results Tests/amazon.robot
 
-Alternatively, you can also run the tests using Powershell by running the following commands in your project directory:
+Alternatively, you can also run the tests using Powershell by running the following command in your project directory:
 - robot -d results  -v BROWSER:${browser_of_your_choice} -v SEARCH_TERM:"${LEGO_car_of_your_choice}" Tests/amazon.robot
 
 E.g. robot -d results/batch/win11chrome -v BROWSER:chrome -v SEARCH_TERM:"LEGO Speed Champions Ferrari SF-24" Tests/amazon.robot
