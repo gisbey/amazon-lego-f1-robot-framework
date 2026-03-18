@@ -2,11 +2,16 @@
 Documentation                   This file holds startup and teardown keywords that are common across applications
 Library                         SeleniumLibrary
 
+*** Variables ***
+${BLANK_BROWSER}                about:blank
+@{WINDOW_POSITION}              0                           0
+@{WINDOW_SIZE}                  1920                        1090
+
 *** Keywords ***
 Begin Web Test
-    Open Browser                about:blank     ${BROWSER}
-    Set Window Position         x=0             y=0
-    set window size             width=1920      height=1090
+    Open Browser                ${BLANK_BROWSER}            ${BROWSER_TYPE}
+    Set Window Position         ${WINDOW_POSITION}[0]       ${WINDOW_POSITION}[1]
+    Set Window Size             ${WINDOW_SIZE}[0]           ${WINDOW_SIZE}[1]
 
 End Web Test
     Close Browser
