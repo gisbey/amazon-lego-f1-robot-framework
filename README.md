@@ -95,4 +95,4 @@ E.g. robot -d results/batch/win11chrome -v BROWSER:chrome -v SEARCH_TERM:"LEGO S
 
 These are stored in the **Results** directory.
 
-There are also three batch files stored in 'Results > batch', each with their own logs. These can be run agains the command line using File Explorer.
+There are also three batch files stored in 'Results > batch', each with their own logs. These can be run against the command line using File Explorer.
