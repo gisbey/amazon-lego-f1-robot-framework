@@ -14,7 +14,7 @@ Suite Teardown                                      Cleanup Testing Data
 
 #Run the script:
 #robot -d results Tests/amazon.robot                To run all tests in a file.
-#robot -d results -i smoke Tests/mazon.robot        To run tagged tests in a file.
+#robot -d results -i smoke Tests/amazon.robot        To run tagged tests in a file.
 #robot -d results Tests                             To run all tests in a directory.
 #robot -d results -N "Full Regression" Tests        To run all tests with custom name in a directory.
 
@@ -38,22 +38,22 @@ Unauthenticated user can search for products and select an item
     AmazonApp.Select Product From Search Results
     Sleep                                           5s
 
-Unauthenticated user can search for products, select an item and add it to their cart
+Unauthenticated user can search for products, select an item and add it to their basket
     [Documentation]                                 Check an unauthenticated user can search for products, select an
-    ...                                             item, and add it to their cart on Amazon UK
+    ...                                             item, and add it to their basket on Amazon UK
     [Tags]                                          F1
     AmazonApp.Search For Products
     AmazonApp.Select Product From Search Results
-    AmazonApp.Add Product To Cart
+    AmazonApp.Add Product To Basket
     Sleep                                           5s
 
-Unauthenticated user can search for products, select an item and add it to their cart, but has to log in to purchase
+Unauthenticated user can search for products, select an item and add it to their basket, but has to log in to purchase
     [Documentation]                                 Check an unauthenticated user can search for products, select an
-    ...                                             item, and add it to their cart on Amazon UK, but they have to log
+    ...                                             item, and add it to their basket on Amazon UK, but they have to log
     ...                                             in to purchase
     [Tags]                                          F1
     AmazonApp.Search For Products
     AmazonApp.Select Product From Search Results
-    AmazonApp.Add Product To Cart
+    AmazonApp.Add Product To Basket
     AmazonApp.Begin Checkout
     Sleep                                           5s

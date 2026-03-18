@@ -5,6 +5,8 @@ Library                         SeleniumLibrary
 *** Keywords ***
 Begin Web Test
     Open Browser                about:blank     ${BROWSER}
+    Set Window Position         x=0             y=0
+    set window size             width=1920      height=1090
 
 End Web Test
     Close Browser

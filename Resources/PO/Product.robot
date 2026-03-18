@@ -6,7 +6,7 @@ Library                             SeleniumLibrary
 Verify Product Loaded
     Page Should Contain             ${SEARCH_TERM}
 
-Add to Cart
+Add to Basket
     Click Button                    id:add-to-cart-button
 
 Verify Product Added
