@@ -70,7 +70,7 @@ Recommended PyCharm Plug-ins:
 
 ## Configuration
 There are 3 variables that can be set:
-- ${BROWSER} = Your choice of browser
+- ${BROWSER_TYPE} = Your choice of browser
 - ${START_URL} = This **must** be set to https://www.amazon.co.uk/
 - ${SEARCH_TERM} = This is the LEGO F1 car of your choice. E.g. LEGO Speed Champions Oracle Red Bull Racing RB20
 
